@@ -54,6 +54,7 @@ header{
     font-size: 1.5em;
     color: #ffffff;
     padding: 1.5rem;
+    transition: all 1.5s;
 }
 .menu__item:hover{
     background-color: #643d61;
@@ -75,6 +76,7 @@ header{
     font-size: 100px;
     position: absolute;
     right: 15rem;
+    transition: all 1.5s;
 }
 
 
@@ -123,7 +125,21 @@ header{
     font-size: 40px;
     font-family: 'Lobster', cursive;
     color: rgb(211, 195, 205);
-    }
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        }
+        @-webkit-keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+        }
+        @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+        } 
 
 
 

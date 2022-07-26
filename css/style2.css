@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* colores */
+/* Fuentes */
+/* espaciados */
+/* tamaños */
+/* tamaños px */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style-type: none; }
+
+header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: var(2rem);
+  background-color: var(rgba(250, 173, 186, 0.945));
+  min-height: 16rem;
+  flex-wrap: wrap; }
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: var(2rem); }
+
+.menu__link {
+  text-decoration: none;
+  font-size: 1, 5rem;
+  color: #ffffff;
+  padding: 1, 5rem;
+  transition: all 1.5s; }
+
+.menu__item:hover {
+  background-color: #643d61;
+  border-radius: 5px; }
+
+.header__logo {
+  display: flex; }

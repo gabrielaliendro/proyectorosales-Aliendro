@@ -4,19 +4,6 @@
     box-sizing: border-box;
 }
 
-/*html{
-    font-size: 62.5%;
-}*/
-
-.grid{
-    display: grid;
-    grid-template-areas: "pagheader pagheader "
-                        "container1 container1 " 
-                        "Nuestros-servicios Nuestros-servicios"
-                        "piedepagina piedepagina";
-}
-
-
 body{
     font-family: 'Times New Roman', Times, serif;
 }

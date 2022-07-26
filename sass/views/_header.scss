@@ -4,8 +4,8 @@ header{
     grid-template-columns: repeat(2, 1fr) ;
     justify-content: space-around;
     align-items: flex-end;
-    padding: var($spacing-small);
-    background-color: var($primary);
+    padding: $spacing-small;
+    background-color: $primary;
     min-height: 16rem;
     flex-wrap: wrap;
 }
@@ -13,22 +13,81 @@ header{
 .menu{
     display: flex;
     list-style: none;
-    gap: var($spacing-small);
-}
-
-.menu__link{
-    text-decoration: none;
-    font-size: $inter;
-    color: $secondary;
-    padding: $inter;
-    transition: all 1.5s;
-}
-
-.menu__item:hover{
-    background-color: #643d61;
-    border-radius: $px-base; 
-}
+    gap: $spacing-small;
+    &__link{
+        text-decoration: none;
+        font-size: $inter;
+        color: $secondary;
+        padding: $inter;
+        transition: all 1.5s;
+    }
+    &__item:hover{
+        background-color: #643d61;
+        border-radius: $px-base; 
+    }
+}      
 
 .header__logo{
     display: flex;
+}
+
+.header__img{
+    display: flex;
+    top: $px-inter;
+    height: 15.5rem;
+    width: 15rem;
+    -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        }
+        @-webkit-keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+        }
+        @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+}
+
+.tituloabogada{
+    top: 15px;
+    color: $alternativ;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 100px;
+    position: absolute;
+    right: 15rem;
+    transition: all 1.5s;
+    -webkit-animation-name: fadeInLeftBig;
+    animation-name: fadeInLeftBig;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeInLeftBig {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes fadeInLeftBig {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
 }

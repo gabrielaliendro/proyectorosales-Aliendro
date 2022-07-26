@@ -21,26 +21,88 @@ header {
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-around;
   align-items: flex-end;
-  padding: var(2rem);
-  background-color: var(rgba(250, 173, 186, 0.945));
+  padding: 2rem;
+  background-color: rgba(250, 173, 186, 0.945);
   min-height: 16rem;
   flex-wrap: wrap; }
 
 .menu {
   display: flex;
   list-style: none;
-  gap: var(2rem); }
-
-.menu__link {
-  text-decoration: none;
-  font-size: 1, 5rem;
-  color: #ffffff;
-  padding: 1, 5rem;
-  transition: all 1.5s; }
-
-.menu__item:hover {
-  background-color: #643d61;
-  border-radius: 5px; }
+  gap: 2rem; }
+  .menu__link {
+    text-decoration: none;
+    font-size: 1, 5rem;
+    color: #ffffff;
+    padding: 1, 5rem;
+    transition: all 1.5s; }
+  .menu__item:hover {
+    background-color: #643d61;
+    border-radius: 5px; }
 
 .header__logo {
   display: flex; }
+
+.header__img {
+  display: flex;
+  top: 2, 5px;
+  height: 15.5rem;
+  width: 15rem;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.tituloabogada {
+  top: 15px;
+  color: #643d61;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 100px;
+  position: absolute;
+  right: 15rem;
+  transition: all 1.5s;
+  -webkit-animation-name: fadeInLeftBig;
+  animation-name: fadeInLeftBig;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+.container1 {
+  width: 100%;
+  margin: 0;
+  margin-top: 0; }

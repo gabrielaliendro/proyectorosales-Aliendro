@@ -567,8 +567,6 @@ textarea{
     .container1{
         width: 100%;
     }
-    .cards{
-    }
     .compromisoabogada{
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
@@ -648,4 +646,4 @@ textarea{
         grid-gap: 30px;
         padding: 35px 0px;
     }
-}
+}  }

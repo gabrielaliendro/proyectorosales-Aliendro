@@ -1,0 +1,542 @@
+@charset "UTF-8";
+/* colores */
+/* Fuentes */
+/* espaciados */
+/* tamaños */
+/* tamaños px */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style-type: none; }
+
+body {
+  font-family: 'Times New Roman', Times, serif; }
+
+.dondodiv {
+  background-image: url(https://inmediaciones.org/wp-content/uploads/2021/10/justicia....jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
+
+/*main*/
+.container1 {
+  max-width: 1900px;
+  margin: 0;
+  margin-top: 0; }
+
+header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 2rem;
+  background-color: rgba(250, 173, 186, 0.945);
+  min-height: 16rem;
+  flex-wrap: wrap; }
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem; }
+  .menu__link, .menu__link--active {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #ffffff;
+    padding: 1, 5rem;
+    transition: all 1.5s; }
+  .menu__item:hover {
+    background-color: #643d61;
+    border-radius: 5px; }
+
+.header__logo {
+  display: flex; }
+  .header__logo__img {
+    display: flex;
+    top: 2, 5px;
+    height: 15.5rem;
+    width: 15rem;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.tituloabogada {
+  top: 15px;
+  color: #643d61;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 100px;
+  position: absolute;
+  right: 15rem;
+  transition: all 1.5s;
+  -webkit-animation-name: fadeInLeftBig;
+  animation-name: fadeInLeftBig;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@media screen and (max-width: 1100px) {
+  .pagheader {
+    grid-template-columns: repeat(1, 1fr);
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center; }
+  .header__img {
+    min-width: 200px;
+    justify-items: center; }
+  .tituloabogada {
+    display: none; }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center center;
+    margin-top: 50px;
+    padding: 0; } }
+
+.container1 {
+  width: 100%;
+  margin: 0;
+  margin-top: 0; }
+
+.cards {
+  display: grid;
+  width: 100%;
+  max-width: 2967px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 50px;
+  padding: 25px 0px; }
+
+.compromisoabogada {
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.692);
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center; }
+
+.imgabogada {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  border-radius: 5px; }
+
+.compromiso {
+  display: flex;
+  text-align: center;
+  width: 500px;
+  margin: 2rem auto;
+  position: relative;
+  font-size: 40px;
+  font-family: 'Lobster', cursive;
+  color: #d3c3cd;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@media screen and (max-width: 1100px) {
+  .container1 {
+    width: 100%; }
+  .compromisoabogada {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%; }
+  .compromiso {
+    width: 100%; } }
+
+.estandarte {
+  width: 100%;
+  background-color: rgba(207, 142, 142, 0.349); }
+
+.hist {
+  max-width: 2967px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  margin-top: 30px;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.692); }
+
+.unc {
+  display: flex;
+  width: 100%;
+  height: 350px;
+  border-radius: 5px; }
+
+.estandarte__poetico {
+  color: rgba(0, 0, 0, 0.692);
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  padding: 0px 30px 0px 30px;
+  -webkit-animation-name: zoomInDown;
+  animation-name: zoomInDown;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes zoomInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+@keyframes zoomInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+.estandarte__descripcion {
+  width: 90%;
+  font-size: 30px;
+  justify-content: flex-end;
+  text-align: center;
+  color: #643d61;
+  max-width: 800px;
+  padding: 10px;
+  right: 100px; }
+
+.carousel-inner {
+  max-height: 30rem; }
+
+.d-block {
+  width: 200vh;
+  height: 50vh; }
+
+.boton1 {
+  font-size: 1, 5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid whitesmoke;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: #aa1daa; }
+
+a {
+  text-decoration: none;
+  color: #1dc0d6; }
+
+.boton1:hover {
+  background-color: #0a2d55; }
+
+#Nuestros-servicios {
+  background-color: rgba(190, 185, 190, 0.39);
+  color: #ece6e6;
+  text-align: center; }
+
+#Nuestros-servicios .container {
+  padding: 70px 12px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.295); }
+
+#Nuestros-servicios h2 {
+  margin-top: 0;
+  font-size: 3.5em;
+  color: #ec3fad; }
+
+#Nuestros-servicios .carta {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 12px;
+  border-radius: 15px; }
+
+.carta:first-child {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagen/derecho-penal.jpg); }
+
+.carta:nth-child(2) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagen/derecho-laboral.jpg); }
+
+.carta:nth-child(3) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagen/derecho-civil.jpg); }
+
+.carta:nth-child(4) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagen/derecho-sucesiones.jpg); }
+
+.carta:nth-child(5) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagen/derecho-Familia.jpg); }
+
+.carta:nth-child(6) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagen/Derecho-real.jpg); }
+
+#Nuestros-servicios .servicios {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  width: 100%; }
+
+#Nuestros-servicios p {
+  display: block;
+  margin-bottom: 30px; }
+
+#Nuestros-servicios h3 {
+  color: rgba(250, 173, 186, 0.945);
+  margin-top: 1px;
+  padding: 20px; }
+
+#Nuestros-servicios .carta {
+  padding: 15px; }
+
+@media screen and (max-width: 1100px) {
+  .estandarte {
+    width: 100%;
+    padding: 1px; }
+  .hist {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 35px;
+    margin: 5px;
+    padding: 10px; }
+  .unc {
+    min-width: 40px; }
+  .estandarte__poetico {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    align-items: center;
+    justify-content: center; }
+  .estandarte__descripcion {
+    width: 100%;
+    color: #3b1138; }
+  /*@cartas*/ }
+
+@media screen and (max-width: 1100px) and (max-width: 1400px) {
+  #Nuestros-servicios .container .servicios {
+    background-color: black;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    grid-gap: 15px; } }
+
+@media screen and (max-width: 1100px) and (max-width: 1400px) {
+  .container2 {
+    width: 100%; }
+  .infopenal {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%; }
+  .infopenal__exp {
+    width: 100%; } }
+
+.piedepagina {
+  width: 100%;
+  background-color: pink; }
+
+.piedepagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 25px 0px; }
+
+.piedepagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.piedepagina .grupo-1 .box figure img {
+  width: 150px; }
+
+.piedepagina .grupo-1 .box h2 {
+  color: white;
+  margin-bottom: 25px;
+  font-size: 20px; }
+
+.piedepagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px; }
+
+.piedepagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  margin-right: 20px;
+  background-color: #ac63a6;
+  text-align: center;
+  transition: all 300ms ease; }
+
+.piedepagina .grupo-1 .red-social a:hover {
+  color: red; }
+
+.piedepagina .grupo-2 {
+  background-color: #643d61;
+  padding: 15px 10px;
+  text-align: center;
+  color: white; }
+
+.piedepagina .grupo-2 small {
+  font-size: 15px; }
+
+@media screen and (max-width: 800px) {
+  .piedepagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px; } }
+
+form {
+  width: 550px;
+  margin: auto;
+  background-color: #bd51b4b9;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 7px; }
+
+legend {
+  color: #d6d6d6;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px; }
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  background-color: #d6d6d6; }
+
+textarea {
+  min-height: 100px;
+  max-height: 300px;
+  max-width: 100%; }
+
+#boton {
+  background-color: #ffffff;
+  color: black;
+  padding: 15px; }
+
+#boton:hover {
+  cursor: pointer;
+  color: red;
+  background-color: #3d3d3d; }
+
+.aclara {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 50px; }
+
+.aclara__term {
+  font-size: 25px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.582); }
+
+@media (max-width: 480px) {
+  form {
+    width: 100%; } }
+
+.container2 {
+  width: 100%; }
+
+.infopenal {
+  max-width: 2967px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  grid-template-rows: auto;
+  margin-top: 30px;
+  align-items: center;
+  padding: 15px; }
+
+.infopenal__exp {
+  width: 100%; }
+
+.imagenjust {
+  display: flex;
+  width: 100%; }
+
+.explic1 {
+  width: 90%;
+  font-size: 30px;
+  text-align: center; }
+
+.videotamaño {
+  width: 90%;
+  min-width: 330px;
+  max-width: 550px; }

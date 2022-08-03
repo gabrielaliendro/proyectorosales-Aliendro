@@ -1,0 +1,15 @@
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+//helpers
+
+/*main*/
+
+.container1 {
+    max-width: 1900px;
+    margin: 0;
+    margin-top: 0; }

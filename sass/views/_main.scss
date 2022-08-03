@@ -4,4 +4,69 @@
     margin-top: 0;
 }
 
+.cards{
+    display: grid;
+    width: 100%;
+    max-width: 2967px;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap:50px;
+    padding: 25px 0px;
+}
+
+.compromisoabogada{
+    margin-top: 20px;
+    background-color: $thetiary;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-xsmall;
+    align-items: center;
+}
+
+.imgabogada{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    border-radius: $px-base;
+}
+
+
+.compromiso{
+    display: flex;
+    text-align: center;
+    width: 500px;
+    margin: $spacing-small auto;
+    position: relative;
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+    color: rgb(211, 195, 205);
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        }
+        @-webkit-keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+        }
+        @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+}
+@media screen and (max-width:1100px){
+    .container1{
+        width: 100%;
+    }
+    .compromisoabogada{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .compromiso{
+        width: 100%;
+    }
+}
+
+
 

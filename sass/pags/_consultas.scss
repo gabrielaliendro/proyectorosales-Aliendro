@@ -1,0 +1,56 @@
+form{
+    width: 550px;
+    margin: auto;
+    background-color: #bd51b4b9;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 7px;
+}
+legend{
+    color: #d6d6d6;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    background-color: rgb(214, 214, 214);
+}
+textarea{
+    min-height: 100px;
+    max-height: 300px;
+    max-width: 100%;
+}
+#boton{
+    background-color: #ffffff;
+    color: black;
+    padding: 15px;
+}
+#boton:hover{
+    cursor: pointer;
+    color: red;
+    background-color: rgb(61, 61, 61);
+}
+.aclara{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 50px;
+    
+}
+.aclara__term{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.582);
+}
+@media (max-width:480px) {
+    form{
+        width: 100%;
+    }
+}
